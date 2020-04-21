@@ -11,14 +11,23 @@ import SwiftUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let iso8601 = DateFormatter()
+        iso8601.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
 
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        decoder.dateDecodingStrategy = .formatted(iso8601)
+
+        let loader = DataLoader(session: .shared, modifiers: [ApiKeyModifier()])
+        let searchService = SearchService(loader: loader, decoder: decoder)
+        let imageService = ImageService(loader: loader, decoder: decoder)
+        let store = SearchStore(searchService: searchService, imageService: imageService)
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let contentView = ContentView().environmentObject(store)
 
         // Use a UIHostingController as window root view controller.
         let window = UIWindow(frame: UIScreen.main.bounds)
