@@ -22,10 +22,10 @@
 		1C53B577244DD4A100B044C0 /* Endpoint+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53B576244DD4A100B044C0 /* Endpoint+Search.swift */; };
 		1C53B57B244DD51A00B044C0 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53B57A244DD51A00B044C0 /* Show.swift */; };
 		1C53B57D244DD59A00B044C0 /* SearchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53B57C244DD59A00B044C0 /* SearchStore.swift */; };
-		1C53B581244DD6B200B044C0 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53B580244DD6B200B044C0 /* ImageService.swift */; };
 		1C53B583244DD70300B044C0 /* Endpoint+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53B582244DD70300B044C0 /* Endpoint+Images.swift */; };
 		1C53B585244DD71C00B044C0 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53B584244DD71B00B044C0 /* Images.swift */; };
 		1C53B588244E0F2E00B044C0 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1C53B587244E0F2E00B044C0 /* KingfisherSwiftUI */; };
+		1C7BDF51244F237F003880CE /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7BDF50244F237F003880CE /* ImageService.swift */; };
 		1CCD168B244F1A84004AD4CE /* PosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCD168A244F1A84004AD4CE /* PosterView.swift */; };
 		1CCD168D244F1CED004AD4CE /* ShelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCD168C244F1CED004AD4CE /* ShelfView.swift */; };
 /* End PBXBuildFile section */
@@ -48,9 +48,9 @@
 		1C53B576244DD4A100B044C0 /* Endpoint+Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Endpoint+Search.swift"; sourceTree = "<group>"; };
 		1C53B57A244DD51A00B044C0 /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		1C53B57C244DD59A00B044C0 /* SearchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStore.swift; sourceTree = "<group>"; };
-		1C53B580244DD6B200B044C0 /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageService.swift; path = ../../../../../ShowBot/ShowBot/Features/Media/Logic/ImageService.swift; sourceTree = "<group>"; };
 		1C53B582244DD70300B044C0 /* Endpoint+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Endpoint+Images.swift"; sourceTree = "<group>"; };
 		1C53B584244DD71B00B044C0 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		1C7BDF50244F237F003880CE /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		1CCD168A244F1A84004AD4CE /* PosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterView.swift; sourceTree = "<group>"; };
 		1CCD168C244F1CED004AD4CE /* ShelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,9 +164,9 @@
 		1C53B571244DD45900B044C0 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				1C53B580244DD6B200B044C0 /* ImageService.swift */,
 				1C53B574244DD48A00B044C0 /* SearchService.swift */,
 				1C53B57C244DD59A00B044C0 /* SearchStore.swift */,
+				1C7BDF50244F237F003880CE /* ImageService.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -278,10 +278,10 @@
 				1C53B54F244DD38F00B044C0 /* ContentView.swift in Sources */,
 				1C53B56C244DD3CE00B044C0 /* Request.swift in Sources */,
 				1C53B57B244DD51A00B044C0 /* Show.swift in Sources */,
-				1C53B581244DD6B200B044C0 /* ImageService.swift in Sources */,
 				1C53B56E244DD3CE00B044C0 /* URL.swift in Sources */,
 				1C53B54D244DD38F00B044C0 /* AppDelegate.swift in Sources */,
 				1C53B56F244DD3CE00B044C0 /* URLQueryItem.swift in Sources */,
+				1C7BDF51244F237F003880CE /* ImageService.swift in Sources */,
 				1C53B56D244DD3CE00B044C0 /* Endpoint.swift in Sources */,
 				1C53B583244DD70300B044C0 /* Endpoint+Images.swift in Sources */,
 				1C53B56A244DD3CE00B044C0 /* DataLoader.swift in Sources */,
